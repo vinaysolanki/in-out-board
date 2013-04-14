@@ -2,6 +2,7 @@ InOutBoard::Application.routes.draw do
   devise_for :users
 
   root :to => 'board#index'
+  match 'index' => 'board#index'
   
   get "board/index"
 
