@@ -1,4 +1,6 @@
 InOutBoard::Application.routes.draw do
+  get "board/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

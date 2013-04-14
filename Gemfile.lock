@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: 98366d05f29e3a920db62540512fb586fc144fa5
+  specs:
+    twitter-bootstrap-rails (2.2.6)
+      actionpack (>= 3.1)
+      execjs
+      railties (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,6 +62,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.22)
     multi_json (1.7.2)
+    mysql2 (0.3.11)
     mysql2 (0.3.11-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -109,4 +119,5 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
+  twitter-bootstrap-rails!
   uglifier (>= 1.0.3)
