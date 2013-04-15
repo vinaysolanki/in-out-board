@@ -21,17 +21,4 @@ class BoardController < ApplicationController
   end
   
   
-  def status_label
-  
-    if current_user.status == 'Not In'
-      @label = 'label-important'
-    elsif current_user.status == 'Away'
-      @label = 'label-warning'
-    else
-      @label = 'label-success'
-    end
-  
-  end
-  
-  
 end

@@ -1,7 +1,7 @@
 <h2>Update Your Status</h2>
 <br>
 <%= form_for @user, :url => { :action => 'update' } do |f| %>
-  <%= f.label "New Status" %>
+  <%= f.label "New Status:", :style => "font-weight:bold;" %>
   <%= f.select :status, options_for_select(['Not In', 'Away', 'Online']) %>
-  <%= f.submit "Update" %>
+  <%= f.submit "Update", :class => "btn btn-primary" %>
 <% end %>
