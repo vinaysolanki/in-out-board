@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   <h1>Welcome <%= current_user.fullname %>!</h1>
-  <span class="your-status">Your Status:</span>
-  <span class="label <%= render :partial => 'status', :locals => {:user => current_user} %>"><%= current_user.status %></span>
+  <span class="your-status">Your Status: </span>
+  <span class="user-label label <%= render :partial => 'status', :locals => {:user => current_user} %>"><%= current_user.status %></span>
   <span><%= link_to "change", 'change' %></span>
   <div style="width:400px">
     <table class="table">
