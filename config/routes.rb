@@ -3,6 +3,9 @@ InOutBoard::Application.routes.draw do
 
   root :to => 'board#index'
   match 'index' => 'board#index'
+  match 'change' => 'board#change'
+  match 'update' => 'board#update'
+  
   
   get "board/index"
 

@@ -1,22 +1,26 @@
 <% if user_signed_in? %>
   <h1>Welcome <%= current_user.fullname %>!</h1>
-  <h4>Your Status:<span class="label label-success"><%= current_user.status %></span></h4>
+  <span class="your-status">Your Status:</span>
+  <span class="label <%= render :partial => 'status', :locals => {:user => current_user} %>"><%= current_user.status %></span>
+  <span><%= link_to "change", 'change' %></span>
   <div style="width:400px">
     <table class="table">
       <tr>
         <th>Name</th>
         <th>Status</th>
       </tr>
-  <% @users.each do |u| %>
-    <tr>
-      <td><%= u.fullname %></td>
-      <td><%= u.status %></td>
-    </tr>
-  <% end %>
+    <% @users.each do |u| %>
+      <tr>
+        <td><%= u.fullname %></td>
+        <td><span class="label <%= render :partial => 'status', :locals => {:user => u} %> ">
+        <%= u.status %></span></td>
+      </tr>
+    <% end %>
     </table>
   </div>
   
 <% else %>
+
 <h1>Welcome to In/Out Board</h1>
 <p>Check status of all employees in the office</p>
 

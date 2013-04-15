@@ -1,0 +1,8 @@
+<% if user.status == 'Not In' %>
+  <%= 'label-important' %>
+<% elsif user.status == 'Away' %>
+  <%= 'label-warning' %>
+<% else %>
+  <%= 'label-success' %>
+<% end %>
+    
