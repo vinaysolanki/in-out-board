@@ -8,7 +8,8 @@
 
 
 
-[*Demo App:*] http://evening-eyrie-4571.herokuapp.com/
+<b>Demo App</b>
+- http://evening-eyrie-4571.herokuapp.com/
 
 
 <b>Default accounts info:</b>
