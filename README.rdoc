@@ -1,15 +1,20 @@
 <b>MVP for In/Out Board app</b>
-
+<br>
 <b>For Local deployment:</b>
 
 1) git clone 'git@github.com:vinaysolanki/in-out-board.git'
+<br>
 2) rake db:setup
+<br>
 
+<br>
 <b>Demo App:</b>
+<br>
 http://evening-eyrie-4571.herokuapp.com/
-
+<br>
 
 <b>Default accounts info:</b>
 
 Email format: fullname@gmail.com
+<br>
 Password: 'asdasdasd'
